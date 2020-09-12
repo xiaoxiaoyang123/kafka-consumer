@@ -11,7 +11,7 @@ object KafkaConsumerTest {
 
   def getKafkaProperties():Properties={
     val props=new Properties()
-    props.setProperty("bootstrap.servers","192.168.172.130:9092")
+    props.setProperty("bootstrap.servers","127.0.0.1:9092")
     props.setProperty("group.id","test")
     props.setProperty("enable.auto.commit","true");
     props.setProperty("auto.commit.interval.ms","1000")
